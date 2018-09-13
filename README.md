@@ -7,7 +7,7 @@ Loads markdown files for use as React components.
 ### Install
 
 ```
-$ yarn add react-markdown https://github.com/The-Politico/markdown-react-loader
+$ yarn add -D react-markdown https://github.com/The-Politico/markdown-react-loader
 ```
 
 ### Use
