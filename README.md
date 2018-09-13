@@ -7,7 +7,7 @@ Loads markdown files for use as React components.
 ### Install
 
 ```
-$ yarn add @politico/markdown-react-loader react-markdown
+$ yarn add react-markdown https://github.com/The-Politico/markdown-react-loader
 ```
 
 ### Use
@@ -20,7 +20,7 @@ module.exports = {
     loaders: [
       {
         test: /\.md$/,
-        loader: '@politico/markdown-react-loader'
+        loader: 'markdown-react-loader'
       }
     ]
   }
