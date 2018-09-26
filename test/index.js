@@ -18,7 +18,7 @@ class TestComponent extends React.Component {
         </nav>
         <div className='container'>
           <hr />
-          <Text />
+          <Text linkTarget='_blank' />
           <hr />
         </div>
       </div>

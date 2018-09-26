@@ -1,7 +1,10 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const portfinder = require('portfinder');
 
-module.exports = (env, argv) => ({
+portfinder.basePort = 3000;
+
+const config = (env, argv, port) => ({
   context: path.resolve(__dirname),
   mode: 'development',
   entry: `./index.js`,
@@ -10,7 +13,7 @@ module.exports = (env, argv) => ({
     filename: 'bundle.js',
   },
   devServer: {
-    port: 3000,
+    port,
     open: true,
   },
   resolve: {
@@ -49,3 +52,7 @@ module.exports = (env, argv) => ({
     }),
   ],
 });
+
+module.exports = (env, argv) =>
+  portfinder.getPortPromise()
+    .then(port => config(env, argv, port));

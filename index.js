@@ -6,13 +6,13 @@ module.exports = function(source) {
   // Create Markdown component w/out JSX
   const component = `React.createElement(
     ReactMarkdown,
-    {source: \`${safeString}\`},
+    {source: \`${safeString}\`, ...props},
     null
   )`;
 
   const module = `const React = require('react');
 const ReactMarkdown = require('react-markdown');
-module.exports = function() { return ${component}; };`;
+module.exports = function(props) { return ${component}; };`;
 
   return module;
 };

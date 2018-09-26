@@ -1,13 +1,13 @@
 ![POLITICO](https://rawgithub.com/The-Politico/src/master/images/logo/badge.png)
 
-# markdown-react-loader
+# @politico/markdown-react-loader
 
 Loads markdown files for use as React components.
 
 ### Install
 
 ```
-$ yarn add -D react-markdown https://github.com/The-Politico/markdown-react-loader
+$ yarn add -D react-markdown @politico/markdown-react-loader
 ```
 
 ### Use
@@ -20,7 +20,7 @@ module.exports = {
     loaders: [
       {
         test: /\.md$/,
-        loader: 'markdown-react-loader'
+        loader: '@politico/markdown-react-loader'
       }
     ]
   }
@@ -37,6 +37,12 @@ const MyComponent = () => (
     <Text />
   </div>
 );
+```
+
+You can also pass any valid props that you would otherwise pass to [react-markdown](https://github.com/rexxars/react-markdown#options).
+
+```javascript
+<Text linkTarget='_blank' />
 ```
 
 ### Test
