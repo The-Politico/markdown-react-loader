@@ -4,6 +4,11 @@
   "description": "Webpack loader, loads markdown files as React components",
   "main": "index.js",
   "license": "MIT",
+  "homepage": "https://github.com/The-Politico/markdown-react-loader",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/The-Politico/markdown-react-loader.git"
+  },
   "scripts": {
     "start": "webpack-dev-server --config test/webpack.config.js"
   },

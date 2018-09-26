@@ -50,3 +50,11 @@ You can also pass any valid props that you would otherwise pass to [react-markdo
 ```
 $ yarn start
 ```
+
+### Development
+
+Make it better, then:
+
+```
+$ npm publish --access public
+```
