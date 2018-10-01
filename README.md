@@ -39,10 +39,20 @@ const MyComponent = () => (
 );
 ```
 
-You can also pass any valid props that you would otherwise pass to [react-markdown](https://github.com/rexxars/react-markdown#options).
+You can pass any valid props that you would otherwise pass to [react-markdown](https://github.com/rexxars/react-markdown#options).
 
 ```javascript
 <Text linkTarget='_blank' />
+```
+
+The loader also preprocesses the text of your markdown files through [mustache.js](https://github.com/janl/mustache.js), so you can also pass a context object to your component and add mustache's template syntax to make your markdown even more powerful.
+
+```markdown
+This is my **{{ mood }}** markdown file.
+```
+
+```javascript
+<Text context={{ mood: 'AWESOME' }} />
 ```
 
 ### Test

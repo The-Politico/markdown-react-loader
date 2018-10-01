@@ -18,7 +18,10 @@ class TestComponent extends React.Component {
         </nav>
         <div className='container'>
           <hr />
-          <Text linkTarget='_blank' />
+          <Text linkTarget='_blank' context={{
+            latin: 'Introibo ad altare Dei.',
+            sections: ['The Tower', 'The School', 'The Strand'],
+          }} />
           <hr />
         </div>
       </div>

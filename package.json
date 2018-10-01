@@ -1,13 +1,13 @@
 {
   "name": "@politico/markdown-react-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Webpack loader, loads markdown files as React components",
   "main": "index.js",
   "license": "MIT",
   "homepage": "https://github.com/The-Politico/markdown-react-loader",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/The-Politico/markdown-react-loader.git"
+    "type": "git",
+    "url": "https://github.com/The-Politico/markdown-react-loader.git"
   },
   "scripts": {
     "start": "webpack-dev-server --config test/webpack.config.js"
@@ -49,5 +49,8 @@
     "webpack": "^4.18.0",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.8"
+  },
+  "dependencies": {
+    "mustache": "^3.0.0"
   }
 }
