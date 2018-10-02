@@ -45,7 +45,7 @@ You can pass any valid props that you would otherwise pass to [react-markdown](h
 <Text linkTarget='_blank' />
 ```
 
-The loader also preprocesses the text of your markdown files through [mustache.js](https://github.com/janl/mustache.js), so you can also pass a context object to your component and add mustache's template syntax to make your markdown even more powerful.
+The loader also preprocesses the text of your markdown files through [mustache.js](https://github.com/janl/mustache.js), so you can also pass a context object to your component and add mustache's [templating syntax](http://mustache.github.io/mustache.5.html) to make your markdown even more powerful.
 
 ```markdown
 This is my **{{ mood }}** markdown file.
