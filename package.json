@@ -1,6 +1,6 @@
 {
   "name": "@politico/markdown-react-loader",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Webpack loader, loads markdown files as React components",
   "main": "index.js",
   "license": "MIT",
@@ -13,6 +13,8 @@
     "start": "webpack-dev-server --config test/webpack.config.js"
   },
   "dependencies": {
+    "@babel/core": "*",
+    "@babel/preset-env": "*",
     "mustache": "^3.0.0"
   },
   "peerDependencies": {
@@ -20,8 +22,6 @@
     "react-markdown": "^3.6.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.56",
-    "@babel/preset-env": "^7.0.0-beta.56",
     "@babel/preset-react": "^7.0.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^9.0.0",
